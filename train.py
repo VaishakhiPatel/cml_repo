@@ -7,8 +7,8 @@ import pickle
 import boto3
 
 
-access_key_id =  'AKIAUPEBGVWGLD7TTUWP'
-secret_access_key = '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'
+access_key_id =  'AKIAZG7IJEGUH5WDPSN3'
+secret_access_key = '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'
 
 session = boto3.Session(
     aws_access_key_id=access_key_id ,
@@ -16,7 +16,7 @@ session = boto3.Session(
 
 s3_resource = session.resource('s3')
 
-bucket='ml-cml-cicd'
+bucket='cml-cicd'
 key= 'ml-model-1/pickle_model.pkl'
 
 # Generate some data
